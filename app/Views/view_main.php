@@ -15,7 +15,9 @@
                 </div>
                 <div class="card-body">
                     <i class="fas fa-users fa-5x mb-4 text-muted"></i>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Agregar Usuarios</button>
+                    <a href="/agregar-usuario">
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Agregar Usuarios</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -26,7 +28,9 @@
                 </div>
                 <div class="card-body">
                     <i class="fas fa-chart-line fa-5x mb-4 text-muted"></i>
-                    <button type="button" class="w-100 btn btn-lg btn-primary">Ver Reportes</button>
+                    <a href="/reportes">
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Ver Reportes</button>
+                    </a>
                 </div>
             </div>
         </div>
