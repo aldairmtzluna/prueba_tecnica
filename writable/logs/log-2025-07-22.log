@@ -1,0 +1,187 @@
+CRITICAL - 2025-07-22 21:13:05 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH/spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-07-22 21:13:05 --> ErrorException: Uncaught Error: Class "Locale" not found in /home/aldair-martinez/Descargas/prueba_tecnica/system/I18n/TimeTrait.php:74
+Stack trace:
+#0 /home/aldair-martinez/Descargas/prueba_tecnica/system/I18n/TimeTrait.php(115): CodeIgniter\I18n\Time->__construct()
+#1 /home/aldair-martinez/Descargas/prueba_tecnica/system/HTTP/ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 /home/aldair-martinez/Descargas/prueba_tecnica/system/HTTP/ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 /home/aldair-martinez/Descargas/prueba_tecnica/system/Debug/ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 /home/aldair-martinez/Descargas/prueba_tecnica/system/Debug/Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /home/aldair-martinez/Descargas/prueba_tecnica/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 /home/aldair-martinez/Descargas/prueba_tecnica/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /home/aldair-martinez/Descargas/prueba_tecnica/spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/I18n/TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-22 21:13:30 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH/spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-07-22 21:13:30 --> ErrorException: Uncaught Error: Class "Locale" not found in /home/aldair-martinez/Descargas/prueba_tecnica/system/I18n/TimeTrait.php:74
+Stack trace:
+#0 /home/aldair-martinez/Descargas/prueba_tecnica/system/I18n/TimeTrait.php(115): CodeIgniter\I18n\Time->__construct()
+#1 /home/aldair-martinez/Descargas/prueba_tecnica/system/HTTP/ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 /home/aldair-martinez/Descargas/prueba_tecnica/system/HTTP/ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 /home/aldair-martinez/Descargas/prueba_tecnica/system/Debug/ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 /home/aldair-martinez/Descargas/prueba_tecnica/system/Debug/Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /home/aldair-martinez/Descargas/prueba_tecnica/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 /home/aldair-martinez/Descargas/prueba_tecnica/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /home/aldair-martinez/Descargas/prueba_tecnica/spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/I18n/TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-22 22:01:25 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(154): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/Home.php(12): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(915): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aldair-martinez/Descargas/prueba_tecnica/public/index.php')
+CRITICAL - 2025-07-22 22:14:08 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Common.php(365): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/Database/MigrationRunner.php(144): db_connect()
+ 5 SYSTEMPATH/Config/Services.php(417): CodeIgniter\Database\MigrationRunner->__construct()
+ 6 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::migrations()
+ 7 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 8 SYSTEMPATH/Config/Services.php(412): CodeIgniter\Config\BaseService::getSharedInstance()
+ 9 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::migrations()
+10 SYSTEMPATH/Commands/Database/Migrate.php(69): CodeIgniter\Config\BaseService::__callStatic()
+11 SYSTEMPATH/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+12 SYSTEMPATH/CLI/Console.php(46): CodeIgniter\CLI\Commands->run()
+13 ROOTPATH/spark(102): CodeIgniter\CLI\Console->run()
+ERROR - 2025-07-22 22:16:09 --> mysqli_sql_exception: Failed to open the referenced table 'usuarios' in /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/Forge.php(555): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aldair-martinez/Descargas/prueba_tecnica/app/Database/Migrations/2025-07-22-220516_CreateDireccionesTable.php(48): CodeIgniter\Database\Forge->createTable()
+#5 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MigrationRunner.php(865): App\Database\Migrations\CreateDireccionesTable->up()
+#6 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/aldair-martinez/Descargas/prueba_tecnica/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run()
+#10 /home/aldair-martinez/Descargas/prueba_tecnica/spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2025-07-22 22:17:32 --> mysqli_sql_exception: Invalid default value for 'fecha_registro' in /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/Forge.php(555): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aldair-martinez/Descargas/prueba_tecnica/app/Database/Migrations/2025-07-22-220516_CreateUsuariosTable.php(67): CodeIgniter\Database\Forge->createTable()
+#5 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MigrationRunner.php(865): App\Database\Migrations\CreateUsuariosTable->up()
+#6 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/aldair-martinez/Descargas/prueba_tecnica/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run()
+#10 /home/aldair-martinez/Descargas/prueba_tecnica/spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2025-07-22 22:17:57 --> mysqli_sql_exception: Invalid default value for 'fecha_registro' in /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/Forge.php(555): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aldair-martinez/Descargas/prueba_tecnica/app/Database/Migrations/2025-07-22-220516_CreateUsuariosTable.php(67): CodeIgniter\Database\Forge->createTable()
+#5 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MigrationRunner.php(865): App\Database\Migrations\CreateUsuariosTable->up()
+#6 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/aldair-martinez/Descargas/prueba_tecnica/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/BaseCommand.php(115): CodeIgniter\CLI\Commands->run()
+#10 /home/aldair-martinez/Descargas/prueba_tecnica/system/Commands/Database/MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call()
+#11 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#12 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run()
+#13 /home/aldair-martinez/Descargas/prueba_tecnica/spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2025-07-22 22:27:22 --> mysqli_sql_exception: Can't DROP 'direcciones_usuario_id_foreign'; check that column/key exists in /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/Forge.php(524): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aldair-martinez/Descargas/prueba_tecnica/app/Database/Migrations/2025-07-22-222253_AddForeignKeyToDirecciones.php(20): CodeIgniter\Database\Forge->dropForeignKey()
+#5 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MigrationRunner.php(865): App\Database\Migrations\AddForeignKeyToDirecciones->down()
+#6 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MigrationRunner.php(288): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/aldair-martinez/Descargas/prueba_tecnica/system/Commands/Database/MigrateRollback.php(86): CodeIgniter\Database\MigrationRunner->regress()
+#8 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run()
+#9 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/BaseCommand.php(115): CodeIgniter\CLI\Commands->run()
+#10 /home/aldair-martinez/Descargas/prueba_tecnica/system/Commands/Database/MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call()
+#11 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#12 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run()
+#13 /home/aldair-martinez/Descargas/prueba_tecnica/spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2025-07-22 22:30:09 --> mysqli_sql_exception: Can't DROP 'direcciones_usuario_id_foreign'; check that column/key exists in /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/Forge.php(524): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aldair-martinez/Descargas/prueba_tecnica/app/Database/Migrations/2025-07-22-222253_AddForeignKeyToDirecciones.php(21): CodeIgniter\Database\Forge->dropForeignKey()
+#5 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MigrationRunner.php(865): App\Database\Migrations\AddForeignKeyToDirecciones->down()
+#6 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MigrationRunner.php(288): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/aldair-martinez/Descargas/prueba_tecnica/system/Commands/Database/MigrateRollback.php(86): CodeIgniter\Database\MigrationRunner->regress()
+#8 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run()
+#9 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/BaseCommand.php(115): CodeIgniter\CLI\Commands->run()
+#10 /home/aldair-martinez/Descargas/prueba_tecnica/system/Commands/Database/MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call()
+#11 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#12 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run()
+#13 /home/aldair-martinez/Descargas/prueba_tecnica/spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2025-07-22 22:42:40 --> mysqli_sql_exception: Table 'usuarios' already exists in /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/Forge.php(555): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aldair-martinez/Descargas/prueba_tecnica/app/Database/Migrations/2025-07-22-000000_CreateUsuariosTable.php(68): CodeIgniter\Database\Forge->createTable()
+#5 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MigrationRunner.php(865): App\Database\Migrations\CreateUsuariosTable->up()
+#6 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/aldair-martinez/Descargas/prueba_tecnica/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/BaseCommand.php(115): CodeIgniter\CLI\Commands->run()
+#10 /home/aldair-martinez/Descargas/prueba_tecnica/system/Commands/Database/MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call()
+#11 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#12 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run()
+#13 /home/aldair-martinez/Descargas/prueba_tecnica/spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2025-07-22 22:43:05 --> mysqli_sql_exception: Table 'usuarios' already exists in /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/Forge.php(555): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aldair-martinez/Descargas/prueba_tecnica/app/Database/Migrations/2025-07-22-000000_CreateUsuariosTable.php(68): CodeIgniter\Database\Forge->createTable()
+#5 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MigrationRunner.php(865): App\Database\Migrations\CreateUsuariosTable->up()
+#6 /home/aldair-martinez/Descargas/prueba_tecnica/system/Database/MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/aldair-martinez/Descargas/prueba_tecnica/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/BaseCommand.php(115): CodeIgniter\CLI\Commands->run()
+#10 /home/aldair-martinez/Descargas/prueba_tecnica/system/Commands/Database/MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call()
+#11 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#12 /home/aldair-martinez/Descargas/prueba_tecnica/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run()
+#13 /home/aldair-martinez/Descargas/prueba_tecnica/spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
